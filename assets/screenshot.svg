@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  
+  <!-- Subtle Grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="75" x2="1200" y2="75"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="225" x2="1200" y2="225"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="375" x2="1200" y2="375"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="150" y1="0" x2="150" y2="675"/>
+    <line x1="300" y1="0" x2="300" y2="675"/>
+    <line x1="450" y1="0" x2="450" y2="675"/>
+    <line x1="600" y1="0" x2="600" y2="675"/>
+    <line x1="750" y1="0" x2="750" y2="675"/>
+    <line x1="900" y1="0" x2="900" y2="675"/>
+    <line x1="1050" y1="0" x2="1050" y2="675"/>
+  </g>
+
+  <!-- Top Navbar -->
+  <rect x="0" y="0" width="1200" height="56" fill="#121215" stroke="#27272a" stroke-width="1"/>
+  <circle cx="32" cy="28" r="14" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b" stroke-width="2"/>
+  <text x="32" y="33" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" text-anchor="middle">λ</text>
+  
+  <text x="56" y="33" fill="#f4f4f5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">MiniAVO</text>
+  <rect x="135" y="18" width="140" height="20" rx="4" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="205" y="32" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">GPU MODE EDITION</text>
+
+  <!-- Target Hardware Badge -->
+  <rect x="830" y="15" width="220" height="26" rx="6" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <circle cx="845" cy="28" r="4" fill="#10b981"/>
+  <text x="858" y="32" fill="#e4e4e7" font-family="monospace" font-size="11" font-weight="600">NVIDIA B200 SXM (8 TB/s)</text>
+  
+  <!-- Export Button -->
+  <rect x="1065" y="15" width="115" height="26" rx="6" fill="#f59e0b" stroke="#d97706" stroke-width="1"/>
+  <text x="1122" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Export Harness</text>
+
+  <!-- Left Sidebar (Problem & Population) -->
+  <rect x="16" y="70" width="280" height="585" rx="8" fill="url(#panelGrad)" stroke="#27272a" stroke-width="1"/>
+  <text x="32" y="96" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="1">BENCHMARK PROBLEM</text>
+  
+  <rect x="28" y="110" width="256" height="68" rx="6" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <text x="40" y="132" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">matmul_v2 (Dense GEMM)</text>
+  <text x="40" y="150" fill="#a1a1aa" font-family="sans-serif" font-size="11">4096 x 4096 x 4096 FP16 / BF16</text>
+  <text x="40" y="166" fill="#10b981" font-family="monospace" font-size="10">GPU MODE Official Problem #1</text>
+
+  <!-- Generation / Variants List -->
+  <text x="32" y="210" fill="#a1a1aa" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1">EVOLUTION HISTORY (GEN 4)</text>
+  
+  <!-- Variant 1 (Elite) -->
+  <rect x="28" y="225" width="256" height="54" rx="6" fill="#1e1e24" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="40" y="245" fill="#fbbf24" font-family="monospace" font-size="11" font-weight="700">v4_swizzle_tma_splitk ★</text>
+  <text x="40" y="263" fill="#10b981" font-family="monospace" font-size="11">92.4 μs (4.18x) • 91.2% Roof</text>
+
+  <!-- Variant 2 -->
+  <rect x="28" y="287" width="256" height="54" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="40" y="307" fill="#e4e4e7" font-family="monospace" font-size="11" font-weight="600">v3_mma_async_pipeline</text>
+  <text x="40" y="325" fill="#a1a1aa" font-family="monospace" font-size="11">128.6 μs (3.00x) • 65.5% Roof</text>
+
+  <!-- Variant 3 -->
+  <rect x="28" y="349" width="256" height="54" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="40" y="369" fill="#e4e4e7" font-family="monospace" font-size="11" font-weight="600">v2_tile_128x128_vec4</text>
+  <text x="40" y="387" fill="#a1a1aa" font-family="monospace" font-size="11">194.2 μs (1.98x) • 43.4% Roof</text>
+
+  <!-- Middle Area: Main Lineage DAG & Workspace -->
+  <rect x="310" y="70" width="560" height="585" rx="8" fill="url(#panelGrad)" stroke="#27272a" stroke-width="1"/>
+  
+  <!-- Tabs -->
+  <rect x="322" y="82" width="110" height="28" rx="4" fill="#27272a"/>
+  <text x="377" y="100" fill="#f4f4f5" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">Lineage DAG</text>
+  <text x="480" y="100" fill="#71717a" font-family="sans-serif" font-size="11" font-weight="500">Roofline Model</text>
+  <text x="590" y="100" fill="#71717a" font-family="sans-serif" font-size="11" font-weight="500">Code &amp; Diff</text>
+  <text x="700" y="100" fill="#71717a" font-family="sans-serif" font-size="11" font-weight="500">GPU MODE Harness</text>
+
+  <!-- Visual DAG representation -->
+  <g stroke="#3f3f46" stroke-width="2" fill="none">
+    <path d="M 400 200 L 500 260"/>
+    <path d="M 400 200 L 500 160"/>
+    <path d="M 500 260 L 620 230"/>
+    <path d="M 500 260 L 620 320"/>
+    <path d="M 620 230 L 750 200" stroke="#f59e0b" stroke-width="3"/>
+  </g>
+
+  <!-- DAG Nodes -->
+  <!-- Root -->
+  <circle cx="400" cy="200" r="16" fill="#27272a" stroke="#71717a" stroke-width="2"/>
+  <text x="400" y="204" fill="#a1a1aa" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">v0</text>
+
+  <!-- Gen 1 -->
+  <circle cx="500" cy="160" r="14" fill="#27272a" stroke="#ef4444" stroke-width="2"/>
+  <text x="500" y="164" fill="#ef4444" font-family="monospace" font-size="9" text-anchor="middle">ERR</text>
+
+  <circle cx="500" cy="260" r="16" fill="#18181b" stroke="#10b981" stroke-width="2"/>
+  <text x="500" y="264" fill="#10b981" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">v1</text>
+
+  <!-- Gen 2 -->
+  <circle cx="620" cy="320" r="14" fill="#27272a" stroke="#71717a" stroke-width="1.5"/>
+  <text x="620" y="324" fill="#a1a1aa" font-family="monospace" font-size="9" text-anchor="middle">v2b</text>
+
+  <circle cx="620" cy="230" r="16" fill="#18181b" stroke="#10b981" stroke-width="2"/>
+  <text x="620" y="234" fill="#10b981" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">v3</text>
+
+  <!-- Elite Leaf -->
+  <circle cx="750" cy="200" r="22" fill="#2d2208" stroke="#f59e0b" stroke-width="3" filter="url(#glow)"/>
+  <text x="750" y="204" fill="#fbbf24" font-family="monospace" font-size="11" font-weight="900" text-anchor="middle">v4★</text>
+  
+  <!-- Mini Lineage Callout -->
+  <rect x="340" y="420" width="500" height="210" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+  <text x="355" y="445" fill="#f59e0b" font-family="monospace" font-size="11" font-weight="700">ACTIVE MUTATION: 2D Block Swizzle + Split-K</text>
+  <text x="355" y="468" fill="#d4d4d8" font-family="sans-serif" font-size="11">Reordered threadblock tile assignment to maximize L2 cache hit rates on 72MB B200 cache.</text>
+  <rect x="355" y="485" width="470" height="130" rx="4" fill="#09090b" stroke="#1f1f23" stroke-width="1"/>
+  <text x="365" y="505" fill="#71717a" font-family="monospace" font-size="10">@triton.jit</text>
+  <text x="365" y="522" fill="#71717a" font-family="monospace" font-size="10">def matmul_kernel_swizzled(a_ptr, b_ptr, c_ptr, M, N, K, ...):</text>
+  <text x="385" y="539" fill="#38bdf8" font-family="monospace" font-size="10">pid = tl.program_id(axis=0)</text>
+  <text x="385" y="556" fill="#fbbf24" font-family="monospace" font-size="10">pid_m, pid_n = swizzle_2d(pid, num_pid_m, num_pid_n, GROUP_M=8)</text>
+  <text x="385" y="573" fill="#10b981" font-family="monospace" font-size="10"># Load with 128-bit vectorization &amp; async pipeline</text>
+  <text x="385" y="590" fill="#e4e4e7" font-family="monospace" font-size="10">accumulator = tl.zeros((BLOCK_SIZE_M, BLOCK_SIZE_N), dtype=tl.float32)</text>
+
+  <!-- Right Telemetry Panel -->
+  <rect x="884" y="70" width="300" height="585" rx="8" fill="url(#panelGrad)" stroke="#27272a" stroke-width="1"/>
+  <text x="900" y="96" fill="#a1a1aa" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1">HARDWARE TELEMETRY (B200)</text>
+
+  <!-- Metric Card 1 -->
+  <rect x="898" y="115" width="270" height="70" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="912" y="135" fill="#a1a1aa" font-family="sans-serif" font-size="11">Achieved Speedup</text>
+  <text x="912" y="168" fill="#10b981" font-family="monospace" font-size="24" font-weight="900">4.18x</text>
+  <text x="980" y="167" fill="#71717a" font-family="monospace" font-size="11">vs PyTorch 2.3</text>
+
+  <!-- Metric Card 2 -->
+  <rect x="898" y="195" width="270" height="70" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="912" y="215" fill="#a1a1aa" font-family="sans-serif" font-size="11">Kernel Latency</text>
+  <text x="912" y="248" fill="#fbbf24" font-family="monospace" font-size="24" font-weight="900">92.4 μs</text>
+  <text x="1010" y="247" fill="#71717a" font-family="monospace" font-size="11">(-294.1 μs)</text>
+
+  <!-- Metric Card 3 -->
+  <rect x="898" y="275" width="270" height="70" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="912" y="295" fill="#a1a1aa" font-family="sans-serif" font-size="11">Memory Bandwidth</text>
+  <text x="912" y="328" fill="#38bdf8" font-family="monospace" font-size="22" font-weight="900">7,296 GB/s</text>
+  <text x="1050" y="327" fill="#71717a" font-family="monospace" font-size="10">91.2% Roof</text>
+
+  <!-- Numerical Verification Badge -->
+  <rect x="898" y="355" width="270" height="40" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+  <text x="912" y="380" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="700">✓ Numerical Test Passed (Δmax: 3.8e-4)</text>
+
+  <!-- Evolution Controls -->
+  <rect x="898" y="585" width="270" height="45" rx="6" fill="#f59e0b" stroke="#d97706" stroke-width="1"/>
+  <text x="1033" y="612" fill="#09090b" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">⚡ Evolve Next Generation</text>
+</svg>
