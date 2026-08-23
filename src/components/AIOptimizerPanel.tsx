@@ -98,7 +98,7 @@ Type an optimization goal below or click a quick prompt!`,
               {m.role === 'assistant' ? (
                 <>
                   <Sparkles className="w-3 h-3 text-emerald-400" />
-                  <span className="text-emerald-400">EvolveKernel AI</span>
+                  <span className="text-emerald-400">MiniAVO AI</span>
                 </>
               ) : (
                 <span className="text-emerald-300">You (Kernel Engineer)</span>

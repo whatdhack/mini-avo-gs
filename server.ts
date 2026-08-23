@@ -191,7 +191,7 @@ app.post('/api/ai-kernel-consult', async (req, res) => {
   try {
     const { problem, hardware, currentCode, prompt, messageHistory = [] } = req.body;
 
-    const systemInstruction = `You are EvolveKernel AI, an expert GPU Kernel Architect and Performance Engineer.
+    const systemInstruction = `You are MiniAVO AI, an expert GPU Kernel Architect and Performance Engineer.
 You analyze Triton, CUDA, C++, and WebGPU compute kernels, identify hardware bottlenecks (shared memory bank conflicts, register spilling, low occupancy, warp divergence, non-coalesced memory accesses), and provide optimized code solutions with clear technical explanations.
 Target Hardware: ${hardware?.name || 'NVIDIA H100'} (${hardware?.architecture || 'Hopper'})`;
 
@@ -271,7 +271,7 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`EvolveKernel server running on http://localhost:${PORT}`);
+    console.log(`MiniAVO server running on http://localhost:${PORT}`);
   });
 }
 
