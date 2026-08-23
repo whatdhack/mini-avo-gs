@@ -80,6 +80,8 @@ To prevent duplicate exploration and give complete visibility into the evolution
 
 ## 3. Quick Start (Local Setup)
 
+### Option A: Interactive Web Studio (Node.js)
+
 ```bash
 # Clone the repository
 git clone https://github.com/<your-username>/mini-avo-gs.git
@@ -93,3 +95,18 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to launch the studio.
+
+---
+
+### Option B: Standalone Python Evolutionary CLI (`run_evolution.py`)
+
+You can run the full evolutionary search pipeline directly in Python (WSL / Linux):
+
+```bash
+# Run 5-generation evolutionary search on Blackwell B200
+python3 run_evolution.py --problem matmul_v2 --hardware b200 --generations 5
+
+# Steer with natural language micro-architectural guidance
+python3 run_evolution.py --problem matmul_v2 --hardware h100 --steer "Maximize shared memory double buffering and TMA"
+```
+
